@@ -19,19 +19,19 @@ public class Dragon extends Criatura implements Volador {
 
         // Si tiene arma, usa el daño adicional
         if (arma != null) {
-            dañoTotal += arma.getDañoAdicional();
-            System.out.println("Usando " + arma.getNombre() + " para daño adicional!");
+            dañoTotal += arma.getDanoAdicional();
+            System.out.println("Usando " + arma.getNombre() + " para dano adicional!");
         }
 
         objetivo.defender(dañoTotal);
     }
 
     @Override
-    public void defender(int daño) {
+    public void defender(int dano) {
         // Las escamas proporcionan algo de defensa
-        int dañoRecibido = Math.max(1, daño - 5);
-        salud -= dañoRecibido;
-        System.out.println(nombre + " recibe " + dañoRecibido + " de daño (protección de escamas: " + escamas + ")");
+        int danoRecibido = Math.max(1, dano - 5);
+        salud -= danoRecibido;
+        System.out.println(nombre + " recibe " + danoRecibido + " de daño (protección de escamas: " + escamas + ")");
     }
 
     // Implementación de Volador

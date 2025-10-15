@@ -2,12 +2,14 @@ public abstract class Criatura {
     protected String nombre;
     protected int salud;
     protected int fuerza;
+    protected Arma arma; // Nueva propiedad para el arma
 
 
     public Criatura(String nombre, int salud, int fuerza) {
         this.nombre = nombre;
         this.salud = salud;
         this.fuerza = fuerza;
+        this.arma = null; // Inicialmente sin arma
        
     }
 
@@ -24,6 +26,7 @@ public abstract class Criatura {
     public String getNombre() { return nombre; }
     public int getSalud() { return salud; }
     public int getFuerza() { return fuerza; }
+    public Arma getArma() { return arma; }
    
 
     

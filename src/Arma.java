@@ -1,20 +1,21 @@
 public class Arma {
     private String nombre;
-    private int dañoAdicional;
+    private int danoAdicional;
+    
 
-    public Arma(String nombre, int dañoAdicional) {
+    public Arma(String nombre, int danoAdicional) {
         this.nombre = nombre;
-        this.dañoAdicional = dañoAdicional;
+        this.danoAdicional = danoAdicional;
     }
 
     public void atacarConArma(Criatura objetivo) {
-        int dañoTotal = dañoAdicional;
-        objetivo.defender(dañoTotal);
-        System.out.println("¡Ataque con " + nombre + " infligiendo " + dañoTotal + " de daño adicional!");
+        int danoTotal = danoAdicional;
+        objetivo.defender(danoTotal);
+        System.out.println("¡Ataque con " + nombre + " infligiendo " + danoTotal + " de dano adicional!");
     }
 
-    public int getDañoAdicional() {
-        return dañoAdicional;
+    public int getDanoAdicional() {
+        return danoAdicional;
     }
 
     public String getNombre() {
@@ -23,6 +24,6 @@ public class Arma {
 
     @Override
     public String toString() {
-        return nombre + " +" + dañoAdicional + " daño";
-    }
+        return nombre + " +" + danoAdicional + " dano";
+    }
 }

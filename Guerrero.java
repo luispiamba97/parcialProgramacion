@@ -17,18 +17,18 @@ public class Guerrero extends Criatura {
         // Si tiene arma adicional, la usa
         if (arma != null) {
             arma.atacarConArma(objetivo);
-            dañoTotal += arma.getDañoAdicional();
+            danoTotal += arma.getDanoAdicional();
         }
 
-        objetivo.defender(dañoTotal);
+        objetivo.defender(danoTotal);
     }
 
     @Override
-    public void defender(int daño) {
+    public void defender(int dano) {
         // Guerrero tiene buena defensa
-        int dañoRecibido = Math.max(1, daño - 3);
-        salud -= dañoRecibido;
-        System.out.println(nombre + " recibe " + dañoRecibido + " de daño (defensa con armadura)");
+        int danoRecibido = Math.max(1, dano - 3);
+        salud -= danoRecibido;
+        System.out.println(nombre + " recibe " + danoRecibido + " de dano (defensa con armadura)");
     }
 
     public String getTipoArma() { return tipoArma; }
