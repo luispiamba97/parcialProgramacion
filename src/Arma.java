@@ -23,6 +23,6 @@ public class Arma {
 
     @Override
     public String toString() {
-        return nombre + " (+" + dañoAdicional + " daño)";
-    }
+        return nombre + " +" + dañoAdicional + " daño";
+    }
 }
