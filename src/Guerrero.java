@@ -10,7 +10,7 @@ public class Guerrero extends Criatura {
     public void atacar(Criatura objetivo) {
         if (!estaViva()) return;
 
-        int dañoTotal = fuerza;
+        int danoTotal = fuerza;
 
         System.out.println(nombre + " ataca con su " + tipoArma + "!");
 
@@ -32,4 +32,9 @@ public class Guerrero extends Criatura {
     }
 
     public String getTipoArma() { return tipoArma; }
+
+    public void setArma(Arma espadaLegendaria) {
+       
+        this.arma = espadaLegendaria;  
+       }
 }
