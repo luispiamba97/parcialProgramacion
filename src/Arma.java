@@ -7,6 +7,7 @@ public class Arma {
         this.danoAdicional = danoAdicional;
     }
 
+    
     public void atacarConArma(Criatura objetivo) {
         int danoTotal = danoAdicional;
         objetivo.defender(danoTotal);

@@ -49,4 +49,13 @@ public class Dragon extends Criatura implements Volador {
 
     public String getEscamas() { return escamas; }
     public boolean isVolando() { return volando; }
+
+    public void setArma(Arma garrasAfiladas) {
+    
+        this.arma = garrasAfiladas;
+       
+
+    }
+
+    
 }

@@ -50,7 +50,7 @@ public class Mago extends Criatura implements Magico {
                 danoHechizo += arma.getDanoAdicional();
             }
 
-            objetivo.defender(dañoHechizo);
+            objetivo.defender(danoHechizo);
             System.out.println("Mana restante: " + mana);
         } else {
             ataqueNormal(objetivo);
@@ -65,4 +65,13 @@ public class Mago extends Criatura implements Magico {
 
     public int getMana() { return mana; }
     public String getHechizos() { return hechizos; }
+
+    public void setArma(Arma varitaMagica) {
+        
+        this.arma = varitaMagica;
+        
+       
+    }
+
+   
 }
